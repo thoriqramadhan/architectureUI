@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-pseudo{
+        @apply w-[1px] h-[20px] bg-white absolute -left-2 bottom-0 invisible transition-all duration-300 scale-0 group-hover:visible group-hover:scale-100
+    }
+}
+@layer utilities{
+    .noscrollbar::-webkit-scrollbar{
+        display: none;
+    }
+}

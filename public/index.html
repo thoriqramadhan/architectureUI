@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class=" noscrollbar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,700;9..40,800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+    <title>Hiroshi Architecture</title>
+</head>
+<body>
+    <!-- menu -->
+    <div class="w-full h-[100vh] bg-[url(/public/img/menu-img.png)] bg-cover bg-center overflow-hidden
+    " id="menu">
+        <!-- sidenav -->
+        <div class="sidenav fixed h-full transition-all duration-500 md:relative">
+            <div class="sidenav-head top-3 left-1 relative w-12 z-10  h-12 bg-slate-400/30 flex items-center justify-center rounded-full md:hidden">
+                <svg class="cursor-pointer" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidenav-body w-52 h-full -z-1 mt-10 relative p-5 transition-all duration-500 -translate-x-full md:-translate-x-0">
+                <ul class="text-white flex flex-col justify-between h-1/2 md:justify-normal md:gap-2">
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#">
+                        <div class="nav-pseudo"></div> Home</a>
+                    </li>
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#about">
+                        <div class="nav-pseudo"></div> About</a>
+                    </li>
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#works">
+                        <div class="nav-pseudo"></div> Works</a></li>
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#testimonial">
+                        <div class="nav-pseudo"></div> Testimonial</a>
+                    </li>
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#">
+                        <div class="nav-pseudo"></div> Shop</a>
+                    </li>
+                    <li><a class="relative group opacity-80 hover:opacity-100" href="#">
+                        <div class="nav-pseudo"></div> Contact
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full h-10 flex justify-center">
+            <img src="/public/img/Hiroshi-logo.png" alt="" class="w-40 h-4 self-center">
+        </div>
+        <!-- logo -->
+        <div class="text-white font-dmSans absolute bottom-3 right-3 ">
+            <h1 class="text-base font-medium sm:text-xl sm:font-normal">Willie house in Bergen</h1>
+            <p class="uppercase font-light text-xs tracking-widest sm:font-thin">Architecture | heritage</p>
+        </div>
+        <!-- slider -->
+        <div class="flex flex-col gap-2 absolute top-1/2 left-5 -translate-y-1/2
+        md:bottom-10 md:left-10 md:top-auto md:-translate-y-0 md:flex-row" 
+        id="slider">
+            <div class="w-[2px] h-10 transition-all duration-500 bg-white rounded-full opacity-80 md:h-[2px] md:w-10"></div>
+            <div class="w-[2px] h-10 transition-all duration-500 bg-white rounded-full opacity-80 md:h-[3px] md:w-10"></div>
+            <div class="w-[2px] h-10 transition-all duration-500 bg-white rounded-full opacity-80 md:h-[2px] md:w-10"></div>
+        </div>
+    </div>
+    <!-- pages -->
+    <div class="w-full" id="about">
+        <!-- quotes & img -->
+        <div class="font-dmSans p-2 mt-10 h-fit 
+        md:flex md:p-6">
+            <div class="flex-1">
+                <div class="relative uppercase text-sm mb-3"><div class="w-1 h-1 bg-black inline-block relative bottom-[4px] mr-1 rounded-full"></div> Architect studio</div>
+                <h1 class="text-3xl font-medium justify-self-center md:pr-5">
+                Architects excited about beauty,
+                affordability sustainability materials
+                for every project and person</h1>
+                <a href="" class="mt-8 block bg-black text-sm text-white w-24 py-2 text-center rounded-lg cursor-pointer transition-all duration-500 md:hover:w-64">read more</a>
+            </div>
+            <div class="invisible md:visible">
+                <img src="/public/img/quotes-bg-1.png" alt="" class="w-[400px] shadow-md">
+            </div>
+        </div>
+        <div class="mt-5 font-dmSans mb-20 md:flex md:w-full md:h-fit md:mb-12">
+            <div class="flex flex-col w-full h-80 text-white gap-y-1 md:h-full md:px-5 md:py-6">
+                <div class="flex-1 flex place-content-center items-center group hover:bg-black transition-all duration-300
+                md:place-content-start">
+                    <a href="#pages" class="text-xl uppercase tracking-widest text-black transition-all duration-300 group-hover:text-white
+                    md:text-base md:font-bold md:normal-case">Design a perfect home</a>
+                </div>
+                <div class="flex-1 flex  place-content-center items-center group hover:bg-black transition-all duration-300
+                md:place-content-start">
+                    <a href="#pages" class="text-xl uppercase tracking-widest text-black transition-all duration-300 group-hover:text-white
+                    md:text-base md:font-bold md:normal-case">Download our brochure</a>
+                </div>
+                <div class="flex-1 flex place-content-center items-center group hover:bg-black transition-all duration-300
+                md:place-content-start">
+                    <a href="#pages" class="text-xl uppercase tracking-widest text-black text-center transition-all duration-300 group-hover:text-white 
+                    md:text-left md:text-base md:font-bold md:normal-case">Ask us your <span class=""> <br class="hidden"> questions our architects</span></a>
+                </div>
+            </div>
+            <div class="p-5 text-center mt-32 md:m-0 md:text-left">
+                <h1 class="text-3xl font-bold tracking-wider md:text-xl">Urban Exteriors</h1>
+                <p class="mt-2 font-normal md:text-sm">
+                    Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim
+                    diam quis enim. Quis auctor.
+                </p>
+            </div>
+            <div class="p-5 text-center mt-20 md:m-0 md:text-left">
+                <h1 class="text-3xl font-bold tracking-wider md:text-xl">Cityscapes Buildings</h1>
+                <p class="mt-2 font-normal md:text-sm">
+                    Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim
+                    diam quis enim. Quis auctor.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- works -->
+    <div class="w-full h-[100vh] bg-black relative -z-10 md:flex" id="works">
+        <div class="w-full h-3/5 flex md:order-2 md:h-full">
+            <div class="bg-[url(/public/img/art-house-1.png)] bg-cover w-4/5 h-full"></div>
+            <div class="w-1/5 h-full bg-[url(/public/img/art-house-2.png)] bg-cover"></div>
+        </div>
+        <div class="text-white font-dmSans md:order-1 md:h-full md:w-[30%] md:flex md:flex-col" id="works">
+            <div class="uppercase md:text-xs md:relative md:font-thin md:flex-1 md:mx-10 md:my-4"> 
+                <div class="w-1 h-1 bg-white rounded-full invisible md:visible md:inline-block md:relative md:bottom-[2px] md:mr-1"></div> 
+                our work
+            </div>
+            <div class="absolute bottom-5 right-5 
+            md:relative md:bottom-auto md:right-auto md:flex-1 md:flex md:justify-end md:flex-col md:m-10">
+                <h1 class="text-lg">Nomus Art House</h1>
+                <p class="uppercase font-extralight text-xs tracking-widest">wellness</p>
+            </div>
+        </div>
+    </div>
+    <!-- works card -->
+    <div class="w-full h-[100vh] bg-white flex flex-col justify-center font-nunitoSans py-10">
+        <h2 class="font-bold text-3xl ml-3">Our Works</h2>
+        <div class="h-full w-full flex flex-nowrap gap-2 pl-2 py-2 overflow-scroll noscrollbar snap-x last:mr-2">
+            <div class="card-container snap-center z-1 h-full w-[240px] transition-all duration-500 bg-white flex shadow-md border-t border-x border-slate-100 rounded-lg overflow-hidden flex-shrink-0">
+                <div class="order-2 flex flex-col">
+                    <div class="card-button">
+                        <span
+                            class="transition-all duration-500 cursor-pointer float-right text-2xl font-bold rotate-180 mr-4 mt-2">></span>
+                    </div>
+                    <div class="card-desc invisible flex-1 flex flex-col justify-end mb-10 p-7 ">
+                        <h1 class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias?</h1>
+                        <button class="bg-black text-white w-1/2 py-[2px]">detail</button>
+                    </div>
+                </div>
+                <!-- w 400px -->
+                <!-- https://source.unsplash.com/640x480?house&20architecture -->
+                <div class="card-img order-1 h-full transition-all duration-500 bg-[url(/public/img/menu-img.png)] bg-cover bg-center"></div>
+            </div>
+            <div
+                class="card-container snap-center z-1 h-full w-[240px] transition-all duration-500 bg-white flex shadow-md border-t border-x border-slate-100 rounded-lg overflow-hidden flex-shrink-0">
+                <div class="order-2 flex flex-col">
+                    <div class="card-button">
+                        <span
+                            class="transition-all duration-500 cursor-pointer float-right text-2xl font-bold rotate-180 mr-4 mt-2">></span>
+                    </div>
+                    <div class="card-desc invisible flex-1 flex flex-col justify-end mb-10 p-7 ">
+                        <h1 class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias?</h1>
+                        <button class="bg-black text-white w-1/2 py-[2px]">detail</button>
+                    </div>
+                </div>
+                <!-- w 400px -->
+                <!-- https://source.unsplash.com/640x480?house&20architecture -->
+                <div
+                    class="card-img order-1 h-full transition-all duration-500 bg-[url(/public/img/menu-img.png)] bg-cover bg-center">
+                </div>
+            </div>
+            <div
+                class="card-container snap-center z-1 h-full w-[240px] transition-all duration-500 bg-white flex shadow-md border-t border-x border-slate-100 rounded-lg overflow-hidden flex-shrink-0">
+                <div class="order-2 flex flex-col">
+                    <div class="card-button">
+                        <span
+                            class="transition-all duration-500 cursor-pointer float-right text-2xl font-bold rotate-180 mr-4 mt-2">></span>
+                    </div>
+                    <div class="card-desc invisible flex-1 flex flex-col justify-end mb-10 p-7 ">
+                        <h1 class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias?</h1>
+                        <button class="bg-black text-white w-1/2 py-[2px]">detail</button>
+                    </div>
+                </div>
+                <!-- w 400px -->
+                <!-- https://source.unsplash.com/640x480?house&20architecture -->
+                <div
+                    class="card-img order-1 h-full transition-all duration-500 bg-[url(/public/img/menu-img.png)] bg-cover bg-center">
+                </div>
+            </div>
+            <div
+                class="card-container snap-center z-1 h-full w-[240px] transition-all duration-500 bg-white flex shadow-md border-t border-x border-slate-100 rounded-lg overflow-hidden flex-shrink-0">
+                <div class="order-2 flex flex-col">
+                    <div class="card-button">
+                        <span
+                            class="transition-all duration-500 cursor-pointer float-right text-2xl font-bold rotate-180 mr-4 mt-2">></span>
+                    </div>
+                    <div class="card-desc invisible flex-1 flex flex-col justify-end mb-10 p-7 ">
+                        <h1 class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, molestias?</h1>
+                        <button class="bg-black text-white w-1/2 py-[2px]">detail</button>
+                    </div>
+                </div>
+                <!-- w 400px -->
+                <!-- https://source.unsplash.com/640x480?house&20architecture -->
+                <div
+                    class="card-img order-1 h-full transition-all duration-500 bg-[url(/public/img/menu-img.png)] bg-cover bg-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- works page 2 -->
+    <div class="w-full h-[100vh] bg-[url(/public/img/works-page-2-bg.png)] bg-cover bg-right-top flex justify-center items-center px-10
+    md:justify-start md:items-end">
+        <h1 class="text-3xl text-white font-dmSans text-center font-medium 
+        md:text-left md:mb-20 md:text-2xl md:w-[450px]">
+            The whimsical feel of Villa Esther begins with the Neo-Modern gateway in the style of Le Corbusier's Villa Savoye.
+        </h1>
+    </div>
+    <!-- Testimonial -->
+    <div class="w-full h-[100vh] px-10 mt-10 bg-testimonial md:px-0 md:flex md:justify-center md:items-center" id="testimonial">
+        <div class="w-full h-full font-dmSans overflow-y-scroll noscrollbar px-5
+        sm:grid sm:grid-cols-2 sm:gap-x-3
+        md:grid-cols-5 md:gap-0 md:h-fit">
+            <div class="aspect-[4/3] shadow-md bg-[url(/public/img/testimonialProfile/robert-jhonson.png)] bg-cover bg-center"></div>
+            <div class="bg-white shadow-md aspect-[4/3] mb-1 flex flex-col items-center
+            sm:col-start-1 sm:row-start-2
+            md:col-start-2 md:row-start-1 md:mb-0 md:items-start md:justify-center md:px-5">
+                <p cla=ss="text-3xl font-semibold mt-3 md:text-xl">Robert Johnson</p>
+                <p class="uppercase font-light tracking-widest md:text-xs">ceo / architect</p>
+                <div class="w-1/2 h-10 relative md:top-10 flex">
+                    <div class="bg-red-100 flex-1"></div>
+                    <div class="bg-blue-50 flex-1"></div>
+                    <div class="bg-slate-300 flex-1"></div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md aspect-[4/3] bg-[url(/public/img/testimonialProfile/robert-jhonson.png)] bg-cover bg-center">img2</div>
+            <div class="bg-white shadow-md aspect-[4/3] mb-1 flex flex-col items-center
+            sm:mb-3 md:mb-0">
+                <p class="text-3xl font-semibold mt-3 md:text-xl">Robert Johnson</p>
+                <p class="uppercase font-light tracking-widest md:text-xs">ceo / architect</p>
+                <div class="w-1/2 h-10 relative md:top-10 flex">
+                    <div class="bg-red-100 flex-1"></div>
+                    <div class="bg-blue-50 flex-1"></div>
+                    <div class="bg-slate-300 flex-1"></div>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-md aspect-[4/3]
+            md:col-start-2 bg-[url(/public/img/testimonialProfile/robert-jhonson.png)] bg-cover bg-center">img3</div>
+
+            <div class="bg-white shadow-md aspect-[4/3] mb-1 flex flex-col items-center
+            sm:col-start-1 sm:row-start-4 sm:mb-3 
+            md:mb-0 md:col-start-3 md:row-start-2">
+                <p class="text-3xl font-semibold mt-3 md:text-xl">Robert Johnson</p>
+                <p class="uppercase font-light tracking-widest md:text-xs">ceo / architect</p>
+                <div class="w-1/2 h-10 relative md:top-10 flex">
+                    <div class="bg-red-100 flex-1"></div>
+                    <div class="bg-blue-50 flex-1"></div>
+                    <div class="bg-slate-300 flex-1"></div>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-md aspect-[4/3]
+            sm:col-start-2 sm:row-start-3
+            md:col-start-4 md:row-start-2 bg-[url(/public/img/testimonialProfile/robert-jhonson.png)] bg-cover bg-center">img4</div>
+            <div class="bg-white shadow-md aspect-[4/3] flex flex-col items-center">
+                <p class="text-3xl font-semibold mt-3 md:text-xl">Robert Johnson</p>
+                <p class="uppercase font-light tracking-widest md:text-xs">ceo / architect</p>
+                <div class="w-1/2 h-10 relative md:top-10 flex">
+                    <div class="bg-red-100 flex-1"></div>
+                    <div class="bg-blue-50 flex-1"></div>
+                    <div class="bg-slate-300 flex-1"></div>
+                </div>
+            </div>
+
+            <!-- h-156 -->
+            <div class="bg-white shadow-md aspect-[4/3] flex justify-center items-center
+            sm:col-span-2 sm:aspect-auto sm:h-[156px] 
+            md:col-auto md:col-start-5 md:row-start-1 md:aspect-[4/3] md:h-auto">jobs and internships</div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
